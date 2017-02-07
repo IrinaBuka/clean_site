@@ -1,0 +1,16 @@
+/*Hadrout custom CSS Reset*/
+img {
+  vertical-align: middle;
+}
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+input, textarea, select, button {
+  outline: none;
+}
+[type=submit], [type=button] {
+  cursor: pointer;
+}
+/*end Hadrout custom CSS Reset*/

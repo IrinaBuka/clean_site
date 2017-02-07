@@ -1,0 +1,89 @@
+@mixin clear {
+  &:after {
+    display: block;
+    clear: both;
+
+    content: '';
+  }
+}
+@mixin block-center {
+  position: relative;
+
+  max-width: 1420px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  @include clear;
+}
+.clear {
+  &:after {
+    display: block;
+    clear: both;
+
+    content: '';
+  }
+}
+.block-center {
+  position: relative;
+
+  max-width: 1420px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  @include clear;
+}
+.content-block {
+  overflow: hidden;
+}
+
+@mixin appearanceCustom($value) {
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  -ms-appearance: $value;
+  -o-appearance: $value;
+  appearance: $value;
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+@mixin stickyFooter($footerHeight, $wrapSelector, $footerSelector) {
+  html, body {
+    height: 100%;
+  }
+
+  #{$wrapSelector} {
+    min-height: 100%;
+    &:after {
+      display: block;
+
+      content: '';
+    }
+  }
+
+  #{$wrapSelector}:after {
+    height: $footerHeight;
+  }
+
+  #{$footerSelector} {
+    min-height: $footerHeight;
+
+    margin-top: -$footerHeight;
+  }
+}
+
+/*
+@font-face {
+    font-family: "GothamProRegular";
+    font-weight: normal;
+    font-style: normal;
+
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+}
+*/
+

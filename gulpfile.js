@@ -17,24 +17,24 @@ var gulp = require('gulp'),
 var path = {
     build: {
         html: 'build/',
-        js: 'build/js/',
-        css: 'build/css/',
-        img: 'build/img/',
-        fonts: 'build/fonts/'
+        js: 'build/public/app/',
+        css: 'build/public/assets/stylesheets/css/',
+        img: 'build/public/assets/images/',
+        fonts: 'build/public/assets/stylesheets/fonts/'
     },
     src: {
         html: 'src/*.html',
-        js: 'src/js/main.js',
-        style: 'src/style/main.scss',
-        img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        js: 'src/public/app/common/main.js',
+        style: 'src/public/assets/stylesheets/sass/main.scss',
+        img: 'src/public/assets/images/**/*.*',
+        fonts: 'src/assets/stylesheets/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
-        js: 'src/js/**/*.js',
-        style: 'src/style/**/*.scss',
-        img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        js: 'src/public/app/**/*.js',
+        style: 'src/public/assets/stylesheets/sass/**/*.scss',
+        img: 'src/public/assets/images/**/*.*',
+        fonts: 'src/public/assets/stylesheets/fonts/**/*.*'
     },
     clean: './build'
 };
