@@ -1,4 +1,9 @@
-@import "lib/_bootstrap.scss";
+$image: 'assets/images/';
+
+@import "lib/_bootstrap";
+@import "lib/_font-awesome";
+
+@import "modules/_header";
 body{
 
 }
