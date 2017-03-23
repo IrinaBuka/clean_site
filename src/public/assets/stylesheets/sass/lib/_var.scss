@@ -6,6 +6,7 @@
     content: '';
   }
 }
+
 @mixin block-center {
   position: relative;
 
@@ -16,6 +17,7 @@
 
   @include clear;
 }
+
 .clear {
   &:after {
     display: block;
@@ -24,9 +26,9 @@
     content: '';
   }
 }
+
 .block-center {
   position: relative;
-
   max-width: 1420px;
   margin: 0 auto;
   padding-right: 10px;
@@ -34,8 +36,24 @@
 
   @include clear;
 }
+
 .content-block {
   overflow: hidden;
+}
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
 }
 
 @mixin appearanceCustom($value) {
@@ -46,6 +64,21 @@
   appearance: $value;
   &::-ms-expand {
     display: none;
+  }
+}
+
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
   }
 }
 
@@ -72,6 +105,13 @@
 
     margin-top: -$footerHeight;
   }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600,700');
+
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url("../fonts/MyriadPro-Regular.otf");
 }
 
 /*

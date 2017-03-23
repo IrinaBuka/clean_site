@@ -1,0 +1,61 @@
+.share {
+  position: relative;
+  text-align: left;
+  .line {
+    width: 100%;
+    height: 1px;
+    background: #97c5d1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    @include transform(translateY(-50%));
+    @media (max-width: 535px) {
+      top: 65%;
+    }
+  }
+  &-list {
+    display: block;
+    text-align: right;
+    margin-top: -24px;
+    right: 0;
+    position: relative;
+    padding: 0;
+    z-index: 9;
+    & > li {
+      display: inline-block;
+      margin-left: 20px;
+      a {
+        border: 1px solid #c8e1e5;
+        background-color: #c5eef8;
+        width: 45px;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        padding: 5px;
+
+      }
+      &.tw a {
+        color: #55acee;
+      }
+      &.fb a {
+        color: #43609c;
+      }
+      &.pin a {
+        color: #cb2027;
+      }
+      &.gp a {
+        color: #dd4b39;
+      }
+      &.en a {
+        color: #60a3ad;
+      }
+      @media (max-width: 535px) {
+        margin-left: 5px;
+      }
+    }
+    @media (max-width: 535px) {
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+}

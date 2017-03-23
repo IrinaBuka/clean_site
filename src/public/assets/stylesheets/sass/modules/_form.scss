@@ -1,0 +1,43 @@
+.form-group {
+  width: 100%;
+  margin: 10px 0;
+  label {
+    color: #003e44;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    @media (max-width: 767px) {
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 7px;
+    }
+    &.always {
+      position: relative;
+      &:after {
+        content: '*';
+        display: inline-block;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  input, textarea {
+    width: 100%;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    color: #3a3a3a;
+    font-size: 16px;
+    resize: none;
+    @media (max-width: 767px){
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  textarea {
+    max-width: 100%;
+    min-height: 150px;
+  }
+}

@@ -1,0 +1,80 @@
+.welcome-section {
+  margin-bottom: 50px;
+  @media (max-width: 767px) {
+    margin-bottom: 25px;
+  }
+  .dark-green {
+    background: url($image + "welcome-section.jpg");
+    background-size: cover;
+    /*padding: 90px 50px;*/
+    .text {
+      @media (min-width: 991px) {
+        float: right;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        @include transform(translateY(-50%));
+      }
+    }
+    h5 {
+      color: #cdf6ff;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 50px;
+      @media (max-width: 991px) {
+        margin-bottom: 20px;
+      }
+    }
+    p {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 27px;
+      margin-top: 0;
+      margin-bottom: 40px;
+      @media (max-width: 767px) {
+        font-size: 15px;
+        line-height: 22px;
+
+      }
+    }
+  }
+  .block-progress {
+    text-align: center;
+    font-size: 0;
+    .inl {
+      display: inline-block;
+      width: calc(100% / 3);
+      &:last-child {
+        .progress-text {
+          border: none;
+        }
+      }
+    }
+    .progress-text {
+      border-right: 1px solid $blue-light;
+
+    }
+    h4 {
+      color: #c3db58;
+      font-size: 30px;
+      font-weight: 700;
+      @media (max-width: 1200px) {
+        font-size: 20px;
+      }
+    }
+    h6 {
+      color: #c3db58;
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+  .blue {
+    background: $blue-light;
+    /* padding: 60px 50px;*/
+
+    p {
+      color: #212121;
+    }
+  }
+}

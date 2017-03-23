@@ -1,0 +1,213 @@
+header {
+  border-top: 8px solid $green;
+  background: #fff;
+  @media (max-width: 435px) {
+    border-top-width: 4px;
+  }
+  .top {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @media (max-width: 991px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    @media (max-width: 435px) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    @media (min-width: 768px) {
+      text-align: center;
+    }
+    &__item {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 35px;
+      position: relative;
+
+      @media (min-width: 768px) {
+        &:after {
+          content: '';
+          position: absolute;
+          height: 50px;
+          background: $blue-dark;
+          width: 1px;
+          right: 0;
+          top: 50%;
+          @include transform(translateY(-50%));
+        }
+        &:nth-last-child(2) {
+          &:after {
+            display: none;
+          }
+        }
+      }
+
+      @media (max-width: 1244px) {
+        padding: 0 15px;
+      }
+      @media (max-width: 797px) {
+        padding: 0 8px;
+      }
+      @media (max-width: 400px) {
+        padding: 0 3px;
+      }
+    }
+  }
+  .logo {
+    img {
+      @media (max-width: 1367px) {
+        width: 350px;
+      }
+      @media (max-width: 1100px) {
+        width: 280px;
+      }
+      @media (max-width: 877px) {
+        width: 200px;
+      }
+      @media (max-width: 400px) {
+        width: 155px;
+      }
+    }
+
+  }
+  .weather {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .social {
+    margin-bottom: 0;
+    &__item {
+      margin-right: 5px;
+      @media (max-width: 890px) {
+        margin-right: 0;
+      }
+      a {
+        padding: 2px 0;
+        font-size: 27px;
+        height: 43px;
+        width: 43px;
+        @media (max-width: 1100px) {
+          padding: 5px 0;
+          font-size: 18px;
+          height: 35px;
+          width: 35px;
+        }
+        @media (max-width: 435px) {
+          padding: 3px 0;
+          font-size: 13px;
+          height: 25px;
+          width: 25px;
+        }
+      }
+
+    }
+
+  }
+  .live-cam {
+    .text {
+      display: inline-block;
+      padding-right: 10px;
+      vertical-align: middle;
+      h4 {
+        color: #003e44;
+        font-size: 17px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: right;
+        margin-bottom: 5px;
+        @media (max-width: 975px) {
+          font-size: 14px;
+        }
+      }
+      h5 {
+        color: #71878d;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 15px;
+        margin-top: 0;
+        max-width: 103px;
+        text-align: right;
+      }
+    }
+    img {
+      @media (max-width: 975px) {
+        width: 60px;
+      }
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  .head-menu-block {
+    background: $blue-dark;
+    &.collapse {
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+  .menu {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0;
+    &__item {
+      @media (max-width: 991px) {
+        border-bottom-width: 4px;
+      }
+      @media (min-width: 768px) {
+        margin: 0 10px;
+        display: inline-block;
+        border-bottom: 8px solid transparent;
+      }
+
+      & > a {
+        color: #003e44;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 15px 0 7px;
+        display: block;
+        &:hover, &:focus {
+          text-decoration: none;
+        }
+        @media (max-width: 1366px) {
+          font-size: 18px;
+        }
+        @media (max-width: 991px) {
+          font-size: 16px;
+          padding: 10px 0 6px;
+        }
+        @media (max-width: 810px) {
+          font-size: 14px;
+        }
+      }
+      &.active, &:hover, &:focus {
+        border-bottom-color: $green;
+        a {
+          color: #1a7b96;
+        }
+        @media (max-width: 767px){
+          background: $green;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .mobile-btn-menu {
+    @media(min-width: 767px) {
+      display: none;
+    }
+    float: right;
+    .menu-btn {
+      position: relative;
+      top: 4px;
+      font-size: 25px;
+      color: $green;
+      @media (max-width: 400px) {
+        top: 0;
+      }
+    }
+  }
+}

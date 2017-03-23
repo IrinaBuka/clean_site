@@ -1,23 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>new project</title>
-
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="public/assets/stylesheets/css/main.css" rel="stylesheet">
-    <script src="public/assets/app/common/main.js"></script>
+    //= template/head.html
 </head>
 <body>
 //= template/header.html
-
-<section class="content">
-    Content
-</section>
-<section class="footer">
-    Footer
-</section>
+<main>
+    <div class="slider main-slider">
+        <div class="item">
+            <img src="public/assets/images/home-slider-1.jpg">
+            <div class="flag">
+                <h4>UPDATE:</h4>
+                <p>Sean Blackamn‘s concert in Capitol Park is canceled due to weather <a href="">more</a></p>
+            </div>
+            <div class="title-block">
+                <h4 class="wow bounceInUp" data-wow-duration="2s" data-wow-delay=".1s">November 18, 2016 - March 5, 2017</h4>
+                <h2 class="wow bounceInUp" data-wow-duration="2s" data-wow-delay=".5s">SKATE THE RINK</h2>
+                <h3 class="wow bounceInUp" data-wow-duration="2s" data-wow-delay="1s">at Campus Martius</h3>
+                <a href="parkInside.html" class="blue-btn wow bounceInUp" data-wow-duration="2s" data-wow-delay="1.5s">learn more</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="public/assets/images/home-slider-1.jpg">
+        </div>
+    </div>
+    <div class="slider mini-slider-nav min-arrows">
+        <a class="slider-item" href="parkInside.html">
+            <img src="public/assets/images/min-slider-home-1.jpg">
+            <div class="description">
+                <h5>Campus Martius</h5>
+                <h6>park</h6>
+            </div>
+        </a>
+        <div class="slider-item"><img src="public/assets/images/min-slider-home-1.jpg"></div>
+        <div class="slider-item"><img src="public/assets/images/min-slider-home-1.jpg"></div>
+        <div class="slider-item"><img src="public/assets/images/min-slider-home-1.jpg"></div>
+        <div class="slider-item"><img src="public/assets/images/min-slider-home-1.jpg"></div>
+    </div>
+    <div class="welcome-section double-section">
+        <div class="row">
+            <div class="col-md-6 dark-green block">
+                <div class="text">
+                    <h5>Lorem ipsum dolor sit amet, cum at inani interesset.</h5>
+                    <p>We’re extremely proud of what we’ve achieved together with charities, individuals,
+                        philanthropists and schools since the Big Give was founded in 2007, and here are some fact from
+                        our achivemnet</p>
+                    <div class="block-progress">
+                        <div class="inl">
+                            <img src="public/assets/images/ic-welcome-1.png" alt="">
+                            <div class="progress-text">
+                                <h4 id="visitors-num" >0</h4>
+                                <h6>PARKS VISITORS</h6>
+                            </div>
+                        </div>
+                        <div class="inl">
+                            <img src="public/assets/images/ic-welcome-2.png" alt="">
+                            <div class="progress-text">
+                                <h4 id="parks">0</h4>
+                                <h6>Amazing PARKS</h6>
+                            </div>
+                        </div>
+                        <div class="inl">
+                            <img src="public/assets/images/ic-welcome-3.png" alt="">
+                            <div class="progress-text">
+                                <h4><span id="events">0</span>+</h4>
+                                <h6>EVENTS PER EYEAR</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 blue block bigger">
+                <div class="text">
+                    <h2 class="title-blocks"><b>WELCOME</b> TO DOWNTOWN DEtROIT PARKS!</h2>
+                    <h5 class="double-section__title">Detroit’s Gathering Place</h5>
+                    <p class="double-section__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has
+                        been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                        also
+                        the
+                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s
+                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                        desktop
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <a href="about.html" class="blue-btn">MORE ABOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="events-section">
+        <div class="block-center">
+            <h1 class="title-blocks"><b>FEATURED</b> EVENTS</h1>
+            //= template/events.html
+            <a href="#" class="blue-btn">VEW ALL EVENTS</a>
+        </div>
+    </div>
+    <div class="dining double-section">
+        <div class="row">
+            <div class="col-md-6 block no-padding">
+                <img src="public/assets/images/dining-1.jpg" alt="">
+            </div>
+            <div class="col-md-6 green-block block bigger">
+                <div class="text">
+                    <h2 class="title-blocks"><b>DINING</b> OPTIONS IN DEtROIT PARKS</h2>
+                    <h5 class="double-section__title">Detroit’s Gathering Place</h5>
+                    <p class="double-section__text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+                    </p>
+                    <a href="#" class="blue-btn">DINING</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    //= template/news.html
+    //= template/sponsors.html
+    //= template/subscribe.html
+</main>
+//= template/footer.html
 </body>
 </html>

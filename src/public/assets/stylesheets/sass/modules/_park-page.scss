@@ -1,0 +1,29 @@
+.park-description {
+  .blue-btn {
+    display: table;
+    margin: auto;
+  }
+}
+
+.things-slider {
+  padding: 0 50px;
+  .item {
+    margin: 0 15px;
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.upcoming-events {
+  padding: 40px 0 25px;
+}
+
+.location {
+  margin-bottom: 50px;
+  #map {
+    width: 100%;
+    height: 350px;
+  }
+}

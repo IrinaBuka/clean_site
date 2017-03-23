@@ -24,7 +24,7 @@ var path = {
     },
     src: {
         html: 'src/*.html',
-        js: 'src/public/app/common/main.js',
+        js: 'src/public/app/**/*.js',
         style: 'src/public/assets/stylesheets/sass/main.scss',
         img: 'src/public/assets/images/**/*.*',
         fonts: 'src/public/assets/stylesheets/fonts/**/*.*'
@@ -81,9 +81,10 @@ gulp.task('style:build', function () {
             sourceMap: true,
             errLogToConsole: true
         }))
+        .pipe(sass().on('error', sass.logError))
         .pipe(prefixer())
         .pipe(cssmin())
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
