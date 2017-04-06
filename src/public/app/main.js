@@ -5,8 +5,6 @@
 
 //= common/slick.min.js
 
-//= common/jquery.animateNumber.min.js
-
 //= common/wow.js
 
 //= common/jquery.justifiedGallery.min.js
